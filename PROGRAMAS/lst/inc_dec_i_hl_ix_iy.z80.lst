@@ -1,0 +1,11 @@
+0000   21 00 10               LD   HL,0x1000   
+0003   DD 21 00 10            LD   IX,0x1000   
+0007   FD 21 03 10            LD   IY,0x1003   
+000B   35                     DEC   (HL)   
+000C   34                     INC   (HL)   
+000D   DD 34 01               INC   (IX+1)   
+0010   DD 35 01               DEC   (IX+1)   
+0013   FD 34 FF               INC   (IY-1)   
+0016   FD 35 FF               DEC   (IY-1)   
+
+

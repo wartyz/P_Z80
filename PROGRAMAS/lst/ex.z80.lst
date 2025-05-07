@@ -1,0 +1,22 @@
+0000   21 34 12               LD   HL,0x1234   
+0003   11 78 56               LD   DE,0x5678   
+0006   EB                     EX   DE,HL   
+0007   3E 11                  LD   A,0x11   
+0009   08                     EX   AF,AF'   
+000A   3E 22                  LD   A,0x22   
+000C   08                     EX   AF,AF'   
+000D   01 BC 9A               LD   BC,0x9ABC   
+0010   D9                     EXX      
+0011   21 11 11               LD   HL,0x1111   
+0014   11 22 22               LD   DE,0x2222   
+0017   01 33 33               LD   BC,0x3333   
+001A   D9                     EXX      
+001B   31 00 01               LD   SP,0x0100   
+001E   D5                     PUSH   DE   
+001F   E3                     EX   (SP),HL   
+0020   DD 21 99 88            LD   IX,0x8899   
+0024   DD E3                  EX   (SP),IX   
+0026   FD 21 77 66            LD   IY,0x6677   
+002A   FD E3                  EX   (SP),IY   
+
+

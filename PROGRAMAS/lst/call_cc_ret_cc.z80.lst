@@ -1,0 +1,43 @@
+0204                          .ORG   0x0204   
+0204   97                     SUB   A   
+0205   C4 29 02               CALL   NZ,l0   
+0208   CC 29 02               CALL   Z,l0   
+020B   C6 01                  ADD   A,0x01   
+020D   CC 2B 02               CALL   Z,l1   
+0210   C4 2B 02               CALL   NZ,l1   
+0213   07                     RLCA      
+0214   EC 2D 02               CALL   PE,l2   
+0217   E4 2D 02               CALL   PO,l2   
+021A   D6 03                  SUB   0x03   
+021C   F4 2F 02               CALL   P,l3   
+021F   FC 2F 02               CALL   M,l3   
+0222   D4 31 02               CALL   NC,l4   
+0225   DC 31 02               CALL   C,l4   
+0228   C9                     RET      
+0229   C0           L0:       RET   NZ   
+022A   C8                     RET   Z   
+022B   C8           L1:       RET   Z   
+022C   C0                     RET   NZ   
+022D   E8           L2:       RET   PE   
+022E   E0                     RET   PO   
+022F   F0           L3:       RET   P   
+0230   F8                     RET   M   
+0231   D0           L4:       RET   NC   
+0232   D8                     RET   C   
+
+
+L0:                 0229 DEFINED AT LINE 18
+                    > USED AT LINE 4
+                    > USED AT LINE 5
+L1:                 022B DEFINED AT LINE 20
+                    > USED AT LINE 7
+                    > USED AT LINE 8
+L2:                 022D DEFINED AT LINE 22
+                    > USED AT LINE 10
+                    > USED AT LINE 11
+L3:                 022F DEFINED AT LINE 24
+                    > USED AT LINE 13
+                    > USED AT LINE 14
+L4:                 0231 DEFINED AT LINE 26
+                    > USED AT LINE 15
+                    > USED AT LINE 16

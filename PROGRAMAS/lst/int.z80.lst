@@ -1,0 +1,20 @@
+0000                          .ORG   0   
+0000   31 00 FF               LD   SP,0xFF00   
+0003   3E 0F                  LD   A,0x0F   
+0005   C3 0A 00               JP   start   
+0008                INT:      .ORG   0x0008   
+0008   47                     LD   B,A   
+0009   C9                     RET      
+0010                START:    .ORG   0x0010   
+0010   FB                     EI      
+0011   B8           LOOP:     CP   B   
+0012   C2 11 00               JP   NZ,loop   
+0015   C9                     RET      
+0016                          .END      
+
+
+INT:                0008 DEFINED AT LINE 6
+START:              000A DEFINED AT LINE 10
+                    > USED AT LINE 4
+LOOP:               0011 DEFINED AT LINE 12
+                    > USED AT LINE 13

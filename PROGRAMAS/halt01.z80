@@ -1,0 +1,28 @@
+            .ORG    0x0000 ; Inicio del programa
+; --- PROGRAMA DE PRUEBA (ejemplo) ---
+            DI       
+            LD      A,0x01 ; Código de prueba
+            LD      B,0x02 
+            ADD     A,B ; A = 0x03
+; --- VOLCADO DE REGISTROS (se ejecuta a continuación) ---
+            LD      (0xC006),HL 
+            PUSH    AF 
+            POP     HL 
+            LD      (0xC000),HL 
+            LD      (0xC002),BC 
+            LD      (0xC004),DE 
+            LD      (0xC008),SP 
+            LD      (0xC00A),IX 
+            LD      (0xC00C),IY 
+            EXX      
+            LD      (0xC014),HL 
+            PUSH    AF 
+            POP     HL 
+            LD      (0xC00E),HL 
+            LD      (0xC010),BC 
+            LD      (0xC012),DE 
+            LD      (0xC016),SP 
+            LD      (0xC018),IX 
+            LD      (0xC01A),IY 
+            HALT     
+

@@ -1,0 +1,9 @@
+[package]
+name = "main"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serialport = "4.7.1"
+dbg_hex = "0.2.0"
+termion = "4.0.5"

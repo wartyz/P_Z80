@@ -1,0 +1,9 @@
+0000   21 03 10               LD   HL,0x1003   
+0003   01 04 00               LD   BC,0x0004   
+0006   3E 03                  LD   A,0x03   
+0008   ED A9                  CPD      
+000A   ED A9                  CPD      
+000C   ED A9                  CPD      
+000E   ED A9                  CPD      
+
+

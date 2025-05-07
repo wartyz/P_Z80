@@ -1,0 +1,18 @@
+0000   3E 0F                  LD   A,0x0F   
+0002   87                     ADD   A,A   
+0003   06 E0                  LD   B,0xE0   
+0005   80                     ADD   A,B   
+0006   3E 81                  LD   A,0x81   
+0008   0E 80                  LD   C,0x80   
+000A   81                     ADD   A,C   
+000B   16 FF                  LD   D,0xFF   
+000D   82                     ADD   A,D   
+000E   1E 40                  LD   E,0x40   
+0010   83                     ADD   A,E   
+0011   26 80                  LD   H,0x80   
+0013   84                     ADD   A,H   
+0014   2E 33                  LD   L,0x33   
+0016   85                     ADD   A,L   
+0017   C6 44                  ADD   A,0x44   
+
+

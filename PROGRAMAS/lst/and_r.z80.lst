@@ -1,0 +1,24 @@
+0000   3E FF                  LD   A,0xFF   
+0002   06 01                  LD   B,0x01   
+0004   0E 03                  LD   C,0x03   
+0006   16 04                  LD   D,0x04   
+0008   1E 08                  LD   E,0x08   
+000A   26 10                  LD   H,0x10   
+000C   2E 20                  LD   L,0x20   
+000E   A0                     AND   B   
+000F   F6 FF                  OR   0xFF   
+0011   A1                     AND   C   
+0012   F6 FF                  OR   0xFF   
+0014   A2                     AND   D   
+0015   F6 FF                  OR   0xFF   
+0017   A3                     AND   E   
+0018   F6 FF                  OR   0xFF   
+001A   A4                     AND   H   
+001B   F6 FF                  OR   0xFF   
+001D   A5                     AND   L   
+001E   F6 FF                  OR   0xFF   
+0020   E6 40                  AND   0x40   
+0022   F6 FF                  OR   0xFF   
+0024   E6 AA                  AND   0xAA   
+
+

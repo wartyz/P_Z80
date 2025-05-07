@@ -1,0 +1,26 @@
+0000   21 FC 00               LD   HL,0x00FC   
+0003   01 08 00               LD   BC,0x0008   
+0006   11 FF FF               LD   DE,0xFFFF   
+0009   09                     ADD   HL,BC   
+000A   19                     ADD   HL,DE   
+000B   ED 4A                  ADC   HL,BC   
+000D   29                     ADD   HL,HL   
+000E   19                     ADD   HL,DE   
+000F   ED 42                  SBC   HL,BC   
+0011   DD 21 FC 00            LD   IX,0x00FC   
+0015   31 00 10               LD   SP,0x1000   
+0018   DD 09                  ADD   IX,BC   
+001A   DD 19                  ADD   IX,DE   
+001C   DD 29                  ADD   IX,IX   
+001E   DD 39                  ADD   IX,SP   
+0020   FD 21 FF FF            LD   IY,0xFFFF   
+0024   FD 09                  ADD   IY,BC   
+0026   FD 19                  ADD   IY,DE   
+0028   FD 29                  ADD   IY,IY   
+002A   FD 39                  ADD   IY,SP   
+002C   21 FF 7F               LD   HL,0x7FFF   
+002F   01 01 00               LD   BC,0x0001   
+0032   ED 4A                  ADC   HL,BC   
+0034   ED 42                  SBC   HL,BC   
+
+

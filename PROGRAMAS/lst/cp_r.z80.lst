@@ -1,0 +1,17 @@
+0000   3E 04                  LD   A,0x04   
+0002   06 05                  LD   B,0x05   
+0004   0E 03                  LD   C,0x03   
+0006   16 FF                  LD   D,0xff   
+0008   1E AA                  LD   E,0xaa   
+000A   26 80                  LD   H,0x80   
+000C   2E 7F                  LD   L,0x7f   
+000E   BF                     CP   A   
+000F   B8                     CP   B   
+0010   B9                     CP   C   
+0011   BA                     CP   D   
+0012   BB                     CP   E   
+0013   BC                     CP   H   
+0014   BD                     CP   L   
+0015   FE 04                  CP   0x04   
+
+

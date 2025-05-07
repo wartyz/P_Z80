@@ -1,0 +1,33 @@
+0000                          .ORG   0x0000   ; Inicio del programa
+0000                             ; --- PROGRAMA DE PRUEBA (ejemplo) ---
+0000   F3                     DI      
+0001   3E 01                  LD   A,0x01   ; Código de prueba
+0003   06 02                  LD   B,0x02   
+0005   80                     ADD   A,B   ; A = 0x03
+0006                             ; --- VOLCADO DE REGISTROS (se ejecuta a continuación) ---
+0006   22 06 C0               LD   (0xC006),HL   
+0009   F5                     PUSH   AF   
+000A   E1                     POP   HL   
+000B   22 00 C0               LD   (0xC000),HL   
+000E   ED 43 02 C0            LD   (0xC002),BC   
+0012   ED 53 04 C0            LD   (0xC004),DE   
+0016   ED 73 08 C0            LD   (0xC008),SP   
+001A   DD 22 0A C0            LD   (0xC00A),IX   
+001E   FD 22 0C C0            LD   (0xC00C),IY   
+0022   D9                     EXX      
+0023   22 14 C0               LD   (0xC014),HL   
+0026   F5                     PUSH   AF   
+0027   E1                     POP   HL   
+0028   22 0E C0               LD   (0xC00E),HL   
+002B   ED 43 10 C0            LD   (0xC010),BC   
+002F   ED 53 12 C0            LD   (0xC012),DE   
+0033   ED 73 16 C0            LD   (0xC016),SP   
+0037   DD 22 18 C0            LD   (0xC018),IX   
+003B   FD 22 1A C0            LD   (0xC01A),IY   
+003F   3E FF                  LD   A,0xFF   
+0041   32 1C C0     BUCLE:    LD   (0xC01C),A   ; indica FINAL (0xFF)
+0044   C3 41 00               JP   BUCLE   
+
+
+BUCLE:              0041 DEFINED AT LINE 28
+                    > USED AT LINE 29

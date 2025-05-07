@@ -1,0 +1,8 @@
+0000   97                     SUB   A   
+0001   2F                     CPL      
+0002   2F                     CPL      
+0003   C6 AA                  ADD   A,0xAA   
+0005   2F                     CPL      
+0006   2F                     CPL      
+
+

@@ -1,0 +1,38 @@
+0204                          .ORG   0x0204   
+0204   97                     SUB   A   
+0205   C2 0C 02               JP   NZ,label0   
+0208   CA 0C 02               JP   Z,label0   
+020B   00                     NOP      
+020C   C6 01        LABEL0:   ADD   A,0x01   
+020E   CA 15 02               JP   Z,label1   
+0211   C2 15 02               JP   NZ,label1   
+0214   00                     NOP      
+0215   07           LABEL1:   RLCA      
+0216   EA 1D 02               JP   PE,label2   
+0219   E2 1D 02               JP   PO,label2   
+021C   00                     NOP      
+021D   C6 FD        LABEL2:   ADD   A,0xFD   
+021F   F2 26 02               JP   P,label3   
+0222   FA 26 02               JP   M,label3   
+0225   00                     NOP      
+0226   D2 2D 02     LABEL3:   JP   NC,label4   
+0229   DA 2D 02               JP   C,label4   
+022C   00                     NOP      
+022D   00           LABEL4:   NOP      
+
+
+LABEL0:             020C DEFINED AT LINE 6
+                    > USED AT LINE 3
+                    > USED AT LINE 4
+LABEL1:             0215 DEFINED AT LINE 10
+                    > USED AT LINE 7
+                    > USED AT LINE 8
+LABEL2:             021D DEFINED AT LINE 14
+                    > USED AT LINE 11
+                    > USED AT LINE 12
+LABEL3:             0226 DEFINED AT LINE 18
+                    > USED AT LINE 15
+                    > USED AT LINE 16
+LABEL4:             022D DEFINED AT LINE 21
+                    > USED AT LINE 18
+                    > USED AT LINE 19

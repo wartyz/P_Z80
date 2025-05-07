@@ -1,0 +1,9 @@
+0204                          .ORG   0x0204   
+0204   CD 0A 02               CALL   l0   
+0207   CD 0A 02               CALL   l0   
+020A   C9           L0:       RET      
+
+
+L0:                 020A DEFINED AT LINE 5
+                    > USED AT LINE 3
+                    > USED AT LINE 4

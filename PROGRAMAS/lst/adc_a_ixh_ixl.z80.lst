@@ -1,0 +1,7 @@
+0000   3E 00                  LD   A,0x00   
+0002   DD 21 61 41            LD   IX,0x4161   
+0006   8F                     ADC   A,A   
+0007   DD 8C                  ADC   A,IXH   
+0009   DD 8D                  ADC   A,IXL   
+
+

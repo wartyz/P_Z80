@@ -1,0 +1,14 @@
+0000   3E 15                  LD   A,0x15   
+0002   06 27                  LD   B,0x27   
+0004   80                     ADD   A,B   
+0005   27                     DAA      
+0006   90                     SUB   B   
+0007   27                     DAA      
+0008   3E 90                  LD   A,0x90   
+000A   06 15                  LD   B,0x15   
+000C   80                     ADD   A,B   
+000D   27                     DAA      
+000E   90                     SUB   B   
+000F   27                     DAA      
+
+

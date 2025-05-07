@@ -1,0 +1,10 @@
+    LD  A,0x04
+    LD  IX,0x01F8
+    SUB A,A
+    SBC A,IXL
+    SBC A,IXH
+    LD  A,0x04
+    LD  IY,0x01F8
+    SUB A,A
+    SBC A,IYL
+    SBC A,IYH

@@ -1,0 +1,10 @@
+0204                          .ORG   0x204   
+0204   06 03                  LD   B,0x03   
+0206   97                     SUB   A   
+0207   3C           LOOP:     INC   A   
+0208   10 FD                  DJNZ   loop   
+020A   00                     NOP      
+
+
+LOOP:               0207 DEFINED AT LINE 4
+                    > USED AT LINE 5

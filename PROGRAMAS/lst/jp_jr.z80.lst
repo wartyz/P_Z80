@@ -1,0 +1,35 @@
+0204                          .ORG   0x0204   
+0204   21 16 02               LD   HL,l3   
+0207   DD 21 19 02            LD   IX,l4   
+020B   FD 21 21 02            LD   IY,l5   
+020F   C3 14 02               JP   l0   
+0212   18 04        L1:       JR   l2   
+0214   18 FC        L0:       JR   l1   
+0216   DD E9        L3:       JP   (IX)   
+0218   E9           L2:       JP   (HL)   
+0219   FD E9        L4:       JP   (IY)   
+021B   18 06        L6:       JR   l7   
+021D   00                     NOP      
+021E   00                     NOP      
+021F   00                     NOP      
+0220   00                     NOP      
+0221   18 F8        L5:       JR   l6   
+0223   00           L7:       NOP      
+
+
+L1:                 0212 DEFINED AT LINE 8
+                    > USED AT LINE 9
+L0:                 0214 DEFINED AT LINE 9
+                    > USED AT LINE 7
+L3:                 0216 DEFINED AT LINE 10
+                    > USED AT LINE 4
+L2:                 0218 DEFINED AT LINE 11
+                    > USED AT LINE 8
+L4:                 0219 DEFINED AT LINE 12
+                    > USED AT LINE 5
+L6:                 021B DEFINED AT LINE 13
+                    > USED AT LINE 18
+L5:                 0221 DEFINED AT LINE 18
+                    > USED AT LINE 6
+L7:                 0223 DEFINED AT LINE 19
+                    > USED AT LINE 13

@@ -1,0 +1,9 @@
+0000   21 00 10               LD   HL,0x1000   
+0003   DD 21 00 10            LD   IX,0x1000   
+0007   FD 21 03 10            LD   IY,0x1003   
+000B   3E FF                  LD   A,0xFF   
+000D   A6                     AND   (HL)   
+000E   DD A6 01               AND   (IX+1)   
+0011   FD A6 FF               AND   (IY-1)   
+
+

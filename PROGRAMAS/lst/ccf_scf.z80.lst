@@ -1,0 +1,8 @@
+0000   97                     SUB   A   
+0001   37                     SCF      
+0002   3F                     CCF      
+0003   D6 CC                  SUB   0xCC   
+0005   3F                     CCF      
+0006   37                     SCF      
+
+

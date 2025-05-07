@@ -1,0 +1,24 @@
+0000   3E 00                  LD   A,0x00   
+0002   06 FF                  LD   B,0xFF   
+0004   0E 0F                  LD   C,0x0F   
+0006   16 0E                  LD   D,0x0E   
+0008   1E 7F                  LD   E,0x7F   
+000A   26 3E                  LD   H,0x3E   
+000C   2E 23                  LD   L,0x23   
+000E   3C                     INC   A   
+000F   3D                     DEC   A   
+0010   04                     INC   B   
+0011   05                     DEC   B   
+0012   0C                     INC   C   
+0013   0D                     DEC   C   
+0014   14                     INC   D   
+0015   15                     DEC   D   
+0016   FE 01                  CP   0x01   
+0018   1C                     INC   E   
+0019   1D                     DEC   E   
+001A   24                     INC   H   
+001B   25                     DEC   H   
+001C   2C                     INC   L   
+001D   2D                     DEC   L   
+
+

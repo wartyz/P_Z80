@@ -1,0 +1,9 @@
+0000   21 00 10               LD   HL,0x1000   
+0003   DD 21 00 10            LD   IX,0x1000   
+0007   FD 21 03 10            LD   IY,0x1003   
+000B   3E 41                  LD   A,0x41   
+000D   BE                     CP   (HL)   
+000E   DD BE 01               CP   (IX+1)   
+0011   FD BE FF               CP   (IY-1)   
+
+

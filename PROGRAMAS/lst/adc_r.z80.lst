@@ -1,0 +1,20 @@
+0000   3E 00                  LD   A,0x00   
+0002   06 41                  LD   B,0x41   
+0004   0E 61                  LD   C,0x61   
+0006   16 81                  LD   D,0x81   
+0008   1E 41                  LD   E,0x41   
+000A   26 61                  LD   H,0x61   
+000C   2E 81                  LD   L,0x81   
+000E   8F                     ADC   A,A   
+000F   88                     ADC   A,B   
+0010   89                     ADC   A,C   
+0011   8A                     ADC   A,D   
+0012   8B                     ADC   A,E   
+0013   8C                     ADC   A,H   
+0014   8D                     ADC   A,L   
+0015   CE 01                  ADC   A,0x01   
+0017   3E 0F                  LD   A,0x0F   
+0019   06 01                  LD   B,0x01   
+001B   88                     ADC   A,B   
+
+

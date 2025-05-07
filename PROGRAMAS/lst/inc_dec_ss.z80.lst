@@ -1,0 +1,14 @@
+0000   01 00 00               LD   BC,0x0000   
+0003   11 FF FF               LD   DE,0xffff   
+0006   21 FF 00               LD   HL,0x00ff   
+0009   31 11 11               LD   SP,0x1111   
+000C   0B                     DEC   BC   
+000D   03                     INC   BC   
+000E   13                     INC   DE   
+000F   1B                     DEC   DE   
+0010   23                     INC   HL   
+0011   2B                     DEC   HL   
+0012   33                     INC   SP   
+0013   3B                     DEC   SP   
+
+

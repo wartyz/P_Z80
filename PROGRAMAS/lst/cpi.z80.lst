@@ -1,0 +1,9 @@
+0000   21 00 10               LD   HL,0X1000   
+0003   01 04 00               LD   BC,0X0004   
+0006   3E 03                  LD   A,0X03   
+0008   ED A1                  CPI      
+000A   ED A1                  CPI      
+000C   ED A1                  CPI      
+000E   ED A1                  CPI      
+
+
